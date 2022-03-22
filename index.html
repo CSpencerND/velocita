@@ -88,7 +88,6 @@
                     is not always the perception.
                 </p>
                 <p>Come check out Velocita and see for yourself!</p>
-                <br />
             </article>
             <article id="quote" class="container">
                 <h1>Get a quote</h1>
@@ -131,6 +130,18 @@
             toggle.onclick = () => {
                 toggle.classList.toggle('active')
                 header.classList.toggle('active')
+            }
+
+            const bottomNav = document.getElementById('bottom-navigation')
+            let lastScrollY = window.scrollY
+            window.onscroll = () => {
+                if (lastScrollY < window.scrollY) {
+                    bottomNav.classList.add('nav-hidden')
+                }
+                else {
+                    bottomNav.classList.remove('nav-hidden')
+                }
+                lastScrollY = window.scrollY
             }
         </script>
     </body>
