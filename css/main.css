@@ -18,9 +18,9 @@
     --bg1: #272822;
     --bg2: #3e3d32;
     --bg3: #75715e;
-    /* --special1: #fd971f; */
     --special1: #e69f66;
     --special2: #ffd866;
+    /* --special3: #fd971f; */
 
     /*** general ***/
     --pdf: #9d0006;
@@ -82,11 +82,16 @@ body {
 hr {
     border-color: var(--special1);
 }
+
 a:link,
 a:visited {
     color: var(--special1);
 }
-main button {
+a:hover {
+    color: var(--special2);
+}
+
+.btn {
     background-color: var(--special1);
     width: 100%;
     font-family: inherit;
@@ -94,10 +99,28 @@ main button {
     letter-spacing: 0.25rem;
     padding: 1em;
     border: none;
+    transition: 0.5s;
 }
-main button a:link,
-main button a:visited {
+.btn a {
+    font-size: 0.83rem;
+}
+.btn a:link,
+.btn a:visited {
     color: var(--bg1);
+}
+.btn:hover {
+    background-color: var(--special2);
+}
+.current-tab:link,
+.current-tab:visited {
+    opacity: 0.5;
+    pointer-events: none;
+}
+#navigation ul li a {
+    transition: 0.25s;
+}
+#navigation ul li a:hover {
+    transform: translateY(-2px);
 }
 
 header {
@@ -182,4 +205,10 @@ header.active #navigation ul li:nth-child(5) {
 
 #bottom-navigation a i {
     color: var(--special2);
+}
+
+@media (min-width: 35em) {
+    html {
+        font-size: var(--fs-600);
+    }
 }

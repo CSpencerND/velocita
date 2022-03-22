@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Velocita | Services</title>
+        <!-- FAVICON -->
+        <link
+            rel="shortcut icon"
+            href="assets/icons/favicon.png"
+            type="image/x-icon"
+        />
+        <link rel="icon" href="assets/icons/favicon.png" type="image/x-icon" />
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/hamburgers.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body class="dark">
+        <header id="header">
+            <div class="header-container">
+                <a id="logo" href="index.html">
+                    <img
+                        src="assets/branding/velocita-scaled.png"
+                        alt="Velocita"
+                    />
+                </a>
+                <button
+                    id="toggle"
+                    class="hamburger hamburger--squeeze"
+                    type="button"
+                    aria-label="Menu"
+                    aria-controls="navigation"
+                >
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a class="current-tab" href="services.html">SERVICES</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <video
+                src="https://i.imgur.com/Zppdkp6.mp4"
+                poster="assets/frames/frame2.png"
+                autoplay
+                loop
+                muted
+            ></video>
+
+            <article id="about" class="container">
+                <h1>Repairs you can trust</h1>
+                <hr />
+                <p>
+                    Velocita is a motorcycle service and repair shop in Red
+                    Hook. I work on everything from the most current superbikes
+                    to carbureted road bikes.
+                </p>
+                <p>
+                    With over 15 years of experience working on Ducatis,
+                    Triumphs, and older BMWs, I am dedicated to doing honest
+                    work and being a trustworthy shop in an industry where that
+                    is not always the perception.
+                </p>
+                <p>Come check out Velocita and see for yourself!</p>
+                <br />
+            </article>
+            <article id="quote" class="container">
+                <h1>Get a quote</h1>
+                <hr />
+                <div>
+                    <p>
+                        I can do an oil change, a custom build, or anything in
+                        between. Click below for a service quote.
+                    </p>
+                    <button class="btn" type="button">
+                        <a href="contact.html" target="_blank">REQUEST</a>
+                    </button>
+                </div>
+            </article>
+            <img src="assets/branding/skull-cropped.jpg" alt="" />
+        </main>
+
+        <nav id="bottom-navigation">
+            <a href="mailto:motovelocita@gmail.com" target="_blank">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a href="tel:718-710-0545">
+                <i class="fa fa-phone"></i>
+            </a>
+            <a
+                href="https://www.google.com/maps/place/93+Forrest+St,+Brooklyn,+NY+11206/@40.7027338,-73.9327001,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25c06da2a9005:0xe7b68f519eb3fe76!8m2!3d40.7027338!4d-73.9327001"
+                target="_blank"
+            >
+                <i class="fa fa-location-dot"></i>
+            </a>
+            <a href="https://www.instagram.com/velocita_moto/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </nav>
+
+        <script>
+            const toggle = document.getElementById('toggle')
+            const header = document.getElementById('header')
+
+            toggle.onclick = () => {
+                toggle.classList.toggle('active')
+                header.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>
