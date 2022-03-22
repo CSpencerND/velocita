@@ -30,10 +30,11 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/hamburgers.css" />
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/index.css" />
     </head>
     <body class="dark">
-        <header id="header" class="container">
-            <div class="container">
+        <header id="header">
+            <div class="header-container">
                 <a id="logo" href="index.html">
                     <img
                         src="assets/branding/velocita-scaled.png"
@@ -72,7 +73,7 @@
                 muted
             ></video>
 
-            <section class="about">
+            <article id="about" class="container">
                 <h1>Repairs you can trust</h1>
                 <hr />
                 <p>
@@ -87,8 +88,8 @@
                     is not always the perception.
                 </p>
                 <p>Come check out Velocita and see for yourself!</p>
-            </section>
-            <section class="quote">
+            </article>
+            <article id="quote" class="container">
                 <h1>Get a quote</h1>
                 <hr />
                 <div>
@@ -96,21 +97,19 @@
                         I can do an oil change, a custom build, or anything in
                         between. Click below for a service quote.
                     </p>
-                    <a
-                        class="btn"
-                        href="mailto:motovelocita@gmail.com"
-                        target="_blank"
-                        >REQUEST</a
-                    >
+                    <button type="button">
+                        <a
+                            href="contact.html"
+                            target="_blank"
+                            >REQUEST</a
+                        >
+                    </button>
                 </div>
-            </section>
+            </article>
+            <img src="assets/branding/skull-cropped.jpg" alt="" />
         </main>
 
-        <footer>
-            <section class="image-container"></section>
-        </footer>
-
-        <section class="bottom-mobile-nav">
+        <nav id="bottom-navigation">
             <a href="mailto:motovelocita@gmail.com" target="_blank">
                 <i class="fa fa-envelope"></i>
             </a>
@@ -126,10 +125,7 @@
             <a href="https://www.instagram.com/velocita_moto/" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
             </a>
-        </section>
-
-
-        </main>
+        </nav>
 
         <script>
             const toggle = document.getElementById('toggle')
