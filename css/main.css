@@ -53,6 +53,9 @@
 }
 
 /* reset {{{ */
+html {
+    font-size: 1.125rem;
+}
 *,
 *::before,
 *::after {
