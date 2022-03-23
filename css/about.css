@@ -1,11 +1,18 @@
+/* .header-container { */
+/*     background-color: var(--bg1); */
+/*     background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%); */
+/* } */
 header {
-    position: relative;
     background-color: var(--bg1);
     background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%);
 }
+header.active {
+    border-radius: 0 0 20px 20px;
+}
 
 main {
-    margin-block: 7%;
+    padding-top: 35%;
+    margin-bottom: 7%;
 }
 
 img {

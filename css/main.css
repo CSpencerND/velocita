@@ -117,10 +117,18 @@ a:hover {
 .btn:hover {
     background-color: var(--special2);
 }
+
 .current-tab:link,
 .current-tab:visited {
     opacity: 0.5;
     pointer-events: none;
+}
+
+#navigation ul {
+    margin-bottom: 0;
+}
+#navigation ul li {
+    width: 100%;
 }
 #navigation ul li a {
     transition: 0.25s;
@@ -149,7 +157,7 @@ header #logo {
     width: 50%;
 }
 header #logo img {
-    max-width: 100%;
+    max-width: 10em;
 }
 header #navigation ul {
     margin-top: 0;
