@@ -1,0 +1,23 @@
+main img {
+    width: 100%;
+    opacity: 0.3;
+}
+main .details {
+    font-size: var(--fs-500);
+}
+main ul {
+    padding: 0;
+}
+main ul li {
+    padding-bottom: 0.25em;
+    transition: 0.25s;
+}
+main ul li:hover {
+    transform: translateY(-2px);
+}
+
+.fa-file-pdf {
+    color: #9d0006;
+    padding-right: 0.5em;
+    opacity: 0.667;
+}

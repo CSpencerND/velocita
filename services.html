@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Velocita | Services</title>
+        <title>Velocita | Home</title>
         <!-- FAVICON -->
         <link
             rel="shortcut icon"
@@ -30,7 +30,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/hamburgers.css" />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/services.css" />
     </head>
     <body class="dark">
         <header id="header">
@@ -56,7 +56,9 @@
             <nav id="navigation">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a class="current-tab" href="services.html">SERVICES</a></li>
+                    <li>
+                        <a class="current-tab" href="services.html">SERVICES</a>
+                    </li>
                     <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
@@ -65,45 +67,82 @@
         </header>
 
         <main>
-            <video
-                src="https://i.imgur.com/Zppdkp6.mp4"
-                poster="assets/frames/frame2.png"
-                autoplay
-                loop
-                muted
-            ></video>
-
+            <img src="assets/branding/invert-skull-cropped.jpg" alt="" />
             <article id="about" class="container">
-                <h1>Repairs you can trust</h1>
+                <h1>Services</h1>
                 <hr />
                 <p>
-                    Velocita is a motorcycle service and repair shop in Red
-                    Hook. I work on everything from the most current superbikes
-                    to carbureted road bikes.
+                    At Velocita, you can make an appointment to get your Ducati
+                    or Triumph serviced. Here you can find the service intervals
+                    for your specific models.
                 </p>
                 <p>
-                    With over 15 years of experience working on Ducatis,
-                    Triumphs, and older BMWs, I am dedicated to doing honest
-                    work and being a trustworthy shop in an industry where that
-                    is not always the perception.
+                    It is recommended to get your oil replaced once a year if
+                    you don’t go the mileage between service intervals.
                 </p>
-                <p>Come check out Velocita and see for yourself!</p>
-                <br />
             </article>
-            <article id="quote" class="container">
-                <h1>Get a quote</h1>
+
+            <section class="details container">
                 <hr />
-                <div>
-                    <p>
-                        I can do an oil change, a custom build, or anything in
-                        between. Click below for a service quote.
-                    </p>
-                    <button class="btn" type="button">
-                        <a href="contact.html" target="_blank">REQUEST</a>
-                    </button>
+                <div class="ducati makes">
+                    <h4>Ducati</h4>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://drive.google.com/file/d/1uW1UR_MPqUDI-QUncm3WBpfRq4mVLgv3/preview"
+                                target="_blank"
+                                ><i class="fa-regular fa-file-pdf"></i
+                                >Scrambler</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://drive.google.com/file/d/1ycvylGVBre689APkaUG7xnP3Ip5USP62/preview"
+                                target="_blank"
+                                ><i class="fa-regular fa-file-pdf"></i
+                                >Testastretta</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://drive.google.com/file/d/1lijBaYkW3YcN2TIWQIXC0b32XLPuF8ZX/preview"
+                                target="_blank"
+                                ><i class="fa-regular fa-file-pdf"></i
+                                >Panigale</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://drive.google.com/file/d/1Cus8p4DjyCDR4SBX82QRpNdcMu8u_WCr/preview"
+                                target="_blank"
+                                ><i class="fa-regular fa-file-pdf"></i>Two-Valve
+                                Engines</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-            </article>
-            <img src="assets/branding/skull-cropped.jpg" alt="" />
+                <div class="triumph makes">
+                    <h4>Triumph</h4>
+                    <ul>
+                        <li>
+                            <a
+                                href="https://drive.google.com/file/d/1OCvhfNwuqcQ-biHkwep6zYwHPEQtUpn-/preview"
+                                target="_blank"
+                                ><i class="fa-regular fa-file-pdf"></i
+                                >Water-Cooled 10k Interval</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://drive.google.com/file/d/1f8Wc0sfKh7upSAeBmYoSrvmwU3DJ1pyb/preview"
+                                target="_blank"
+                                ><i class="fa-regular fa-file-pdf"></i
+                                >Air-Cooled 6k Interval</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
 
         <nav id="bottom-navigation">
@@ -131,6 +170,17 @@
             toggle.onclick = () => {
                 toggle.classList.toggle('active')
                 header.classList.toggle('active')
+            }
+
+            const bottomNav = document.getElementById('bottom-navigation')
+            let lastScrollY = window.scrollY
+            window.onscroll = () => {
+                if (lastScrollY < window.scrollY) {
+                    bottomNav.classList.add('nav-hidden')
+                } else {
+                    bottomNav.classList.remove('nav-hidden')
+                }
+                lastScrollY = window.scrollY
             }
         </script>
     </body>

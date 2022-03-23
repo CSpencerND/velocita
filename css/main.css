@@ -12,7 +12,8 @@
     /* --special2: #fabd2f; */
 
     /*** monokai  ***/
-    --fg0: #cfcfc2;
+    /* --fg0: #cfcfc2; */
+    --fg0: #ebdbb2;
     --fg1: #f8f8f2;
     --bg0: #212121;
     --bg1: #272822;
@@ -40,7 +41,7 @@
 }
 
 .dark {
-    color: var(--fg1);
+    color: var(--fg0);
     background-color: var(--bg1);
 }
 .darker {
@@ -81,6 +82,8 @@ a {
 body {
     font-family: Oswald, sans-serif;
     margin: 0;
+    text-transform: uppercase;
+    line-height: 1.5rem;
 }
 hr {
     border-color: var(--special1);
@@ -225,8 +228,8 @@ header.active #navigation ul li:nth-child(5) {
         font-size: var(--fs-700);
     }
 }
-@media (min-width: 70em) {
-    html {
-        font-size: var(--fs-800);
-    }
-}
+/* @media (min-width: 70em) { */
+    /* html { */
+        /* font-size: var(--fs-800); */
+    /* } */
+/* } */

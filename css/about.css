@@ -1,0 +1,22 @@
+header {
+    position: relative;
+    background-color: var(--bg1);
+    background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%);
+}
+
+main {
+    margin-block: 7%;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    text-transform: initial;
+    font-size: var(--fs-300);
+}
+
+span a {
+    display: initial;
+}

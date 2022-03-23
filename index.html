@@ -73,35 +73,37 @@
                 muted
             ></video>
 
-            <article id="about" class="container">
-                <h1>Repairs you can trust</h1>
-                <hr />
-                <p>
-                    Velocita is a motorcycle service and repair shop in Red
-                    Hook. I work on everything from the most current superbikes
-                    to carbureted road bikes.
-                </p>
-                <p>
-                    With over 15 years of experience working on Ducatis,
-                    Triumphs, and older BMWs, I am dedicated to doing honest
-                    work and being a trustworthy shop in an industry where that
-                    is not always the perception.
-                </p>
-                <p>Come check out Velocita and see for yourself!</p>
-            </article>
-            <article id="quote" class="container">
-                <h1>Get a quote</h1>
-                <hr />
-                <div>
+            <section class="container">
+                <article id="about">
+                    <h1>Repairs you can trust</h1>
+                    <hr />
                     <p>
-                        I can do an oil change, a custom build, or anything in
-                        between. Click below for a service quote.
+                        Velocita is a motorcycle service and repair shop in Red
+                        Hook. I work on everything from the most current
+                        superbikes to carbureted road bikes.
                     </p>
-                    <button class="btn" type="button">
-                        <a href="contact.html" target="_blank">REQUEST</a>
-                    </button>
-                </div>
-            </article>
+                    <p>
+                        With over 15 years of experience working on Ducatis,
+                        Triumphs, and older BMWs, I am dedicated to doing honest
+                        work and being a trustworthy shop in an industry where
+                        that is not always the perception.
+                    </p>
+                    <p>Come check out Velocita and see for yourself!</p>
+                </article>
+                <article id="quote">
+                    <h1>Get a quote</h1>
+                    <hr />
+                    <div>
+                        <p>
+                            I can do an oil change, a custom build, or anything
+                            in between. Click below for a service quote.
+                        </p>
+                        <button class="btn" type="button">
+                            <a href="contact.html" target="_blank">REQUEST</a>
+                        </button>
+                    </div>
+                </article>
+            </section>
             <img src="assets/branding/skull-cropped.jpg" alt="" />
         </main>
 
@@ -137,8 +139,7 @@
             window.onscroll = () => {
                 if (lastScrollY < window.scrollY) {
                     bottomNav.classList.add('nav-hidden')
-                }
-                else {
+                } else {
                     bottomNav.classList.remove('nav-hidden')
                 }
                 lastScrollY = window.scrollY
