@@ -33,8 +33,8 @@
         <link rel="stylesheet" href="css/contact.css" />
     </head>
     <body class="dark">
-        <header id="header">
-            <div class="header-container">
+        <header id="header" class="relative">
+            <div class="header-container header-container-colored">
                 <a id="logo" href="index.html">
                     <img
                         src="assets/branding/velocita-scaled.png"
@@ -53,7 +53,7 @@
                     </span>
                 </button>
             </div>
-            <nav id="navigation">
+            <nav id="navigation" class="absolute">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="services.html">SERVICES</a></li>
@@ -66,8 +66,8 @@
             </nav>
         </header>
 
-        <main>
-            <section id="contact" class="container">
+        <main class="mblock7">
+            <section id="contact" class="container card">
                 <h2>CONTACT ME</h2>
                 <form>
                     <p id="first-name">
@@ -126,14 +126,14 @@
 
             <section class="container">
                 <div id="info">
-                    <address>
+                    <address class="card">
                         Kerry Sano <br />
                         97 Union Street <br />
                         Brooklyn, NY <br />
                         <a id="tel" href="tel:718-710-0545">718-710-0545</a>
                     </address>
-                    <div id="hours">
-                        <h3>SHOP HOURS</h3>
+                    <div id="hours" class="card">
+                        <h3 class="mb0">SHOP HOURS</h3>
                         <time datetime="10">Mon - Fri: 10am</time> -
                         <time datetime="18">6pm</time> <br />
                         Sat & Sun: Closed

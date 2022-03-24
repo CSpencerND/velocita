@@ -1,26 +1,5 @@
-.header-container {
-    background-color: var(--bg1);
-    background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%);
-}
-
-main {
-    padding-top: 35%;
-    margin-bottom: 7%;
-}
-
-#contact {
-    margin-bottom: 7%;
-}
-#contact h2 {
-    padding-left: 0.25em;
-    margin-top: 0;
-}
-
 /* FORM {{{ */
 form {
-    background-color: var(--bg1);
-    background: radial-gradient(circle, var(--bg1) 0%, var(--bg2) 90%);
-    padding: 1em;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-column-gap: 0.5em;
@@ -43,7 +22,7 @@ form .full {
 }
 form p {
     margin: 0;
-    padding: 0.5em;
+    padding-block: 0.5em;
 }
 form .last {
     visibility: hidden;
@@ -51,24 +30,25 @@ form .last {
 form label {
     display: block;
     font-size: 0.75em;
+    padding-inline: 0.5em;
 }
 form input:-webkit-autofill,
 form input:-webkit-autofill:hover,
 form input:-webkit-autofill:focus,
 form input:-webkit-autofill:active {
-    -webkit-text-fill-color: var(--fg);
-    -webkit-box-shadow: 0 0 0px 1000px var(--bg) inset;
-    box-shadow: 0 0 0px 1000px var(--bg) inset;
+    -webkit-text-fill-color: var(--fg0);
+    -webkit-box-shadow: 0 0 0px 1000px var(--bg0) inset;
+    box-shadow: 0 0 0px 1000px var(--bg0) inset;
     transition: background-color 5000s ease-in-out 0s;
 }
 form input,
 form textarea {
-    font-family: inherit;
-    color: var(--fg1);
-    background: var(--bg1);
     width: 100%;
+    padding: 0.5em;
+    font-family: inherit;
     font-size: 0.875em;
-    padding: 0.25em;
+    color: var(--fg0);
+    background: var(--bg0);
     border-top: 1px solid var(--bg0);
     border-left: 1px solid var(--bg0);
     border-bottom: 1px solid var(--bg3);
@@ -86,14 +66,8 @@ form .btn {
 }
 /* FORM }}} */
 
-#info {
-    margin-bottom: 7%;
-}
 #info address #tel {
     width: fit-content;
-}
-#info h3 {
-    margin-bottom: 0;
 }
 
 iframe {

@@ -1,15 +1,13 @@
-main img {
-    width: 100%;
-    opacity: 0.3;
-}
 main .details {
     font-size: var(--fs-500);
 }
+
 main ul {
     padding: 0;
+    margin-bottom: 0;
+    line-height: 2em;
 }
 main ul li {
-    padding-bottom: 0.25em;
     transition: 0.25s;
 }
 main ul li:hover {
@@ -17,7 +15,7 @@ main ul li:hover {
 }
 
 .fa-file-pdf {
-    color: #9d0006;
+    color: var(--pdf);
     padding-right: 0.5em;
-    opacity: 0.667;
+    /* opacity: 0.667; */
 }

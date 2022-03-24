@@ -1,27 +1,10 @@
-/* .header-container { */
-/*     background-color: var(--bg1); */
-/*     background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%); */
-/* } */
-header {
-    background-color: var(--bg1);
-    background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%);
-}
-header.active {
-    border-radius: 0 0 20px 20px;
-}
-
-main {
-    padding-top: 35%;
-    margin-bottom: 7%;
-}
-
-img {
-    width: 100%;
-}
-
 figcaption {
     text-transform: initial;
     font-size: var(--fs-300);
+}
+
+article h3 {
+    margin-top: 1em;
 }
 
 span a {

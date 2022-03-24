@@ -30,7 +30,6 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/hamburgers.css" />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/index.css" />
     </head>
     <body class="dark">
         <header id="header">
@@ -66,6 +65,7 @@
 
         <main>
             <video
+                class="header-bg"
                 src="https://i.imgur.com/Zppdkp6.mp4"
                 poster="assets/frames/frame2.png"
                 autoplay
@@ -73,9 +73,9 @@
                 muted
             ></video>
 
-            <section class="container">
+            <section class="container card">
+                <h1>Repairs you can trust</h1>
                 <article id="about">
-                    <h1>Repairs you can trust</h1>
                     <hr />
                     <p>
                         Velocita is a motorcycle service and repair shop in Red
@@ -88,23 +88,25 @@
                         work and being a trustworthy shop in an industry where
                         that is not always the perception.
                     </p>
-                    <p>Come check out Velocita and see for yourself!</p>
+                    <p class="mb0">Come check out Velocita and see for yourself!</p>
                 </article>
+            </section>
+            <section class="container card">
+                <h1>Get a quote</h1>
                 <article id="quote">
-                    <h1>Get a quote</h1>
                     <hr />
                     <div>
                         <p>
                             I can do an oil change, a custom build, or anything
                             in between. Click below for a service quote.
                         </p>
-                        <button class="btn" type="button">
-                            <a href="contact.html" target="_blank">REQUEST</a>
-                        </button>
                     </div>
                 </article>
+                <button class="btn" type="button">
+                    <a href="contact.html" target="_blank">REQUEST</a>
+                </button>
             </section>
-            <img src="assets/branding/skull-cropped.jpg" alt="" />
+            <img class="m0" src="assets/branding/skull-cropped.jpg" alt="" />
         </main>
 
         <nav id="bottom-navigation">
