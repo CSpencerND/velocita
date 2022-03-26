@@ -67,8 +67,16 @@
         </header>
 
         <main>
-            <img id="header-image" class="header-bg5" src="assets/gallery/header-compressed.jpg" alt="" />
-            <section id="showcase" class="container">
+            <section id="header-banner">
+                <img
+                    id="header-image"
+                    class="header-bg5"
+                    src="assets/gallery/header-compressed.jpg"
+                    alt=""
+                />
+            </section>
+            <section id="showcase">
+            <!-- TODO: create modal container in html; make opacity 0 with mouse events none -->
                 <img
                     src="assets/gallery/images/FullSizeRender.jpg"
                     loading="lazy"
@@ -147,29 +155,6 @@
             </a>
         </nav>
 
-        <script>
-            const toggle = document.getElementById('toggle')
-            const header = document.getElementById('header')
-
-            toggle.onclick = () => {
-                toggle.classList.toggle('active')
-                header.classList.toggle('active')
-            }
-
-            const bottomNav = document.getElementById('bottom-navigation')
-            let lastScrollY = window.scrollY
-            window.onscroll = () => {
-                if (lastScrollY < window.scrollY) {
-                    bottomNav.classList.add('nav-hidden')
-                } else {
-                    bottomNav.classList.remove('nav-hidden')
-                }
-                lastScrollY = window.scrollY
-            }
-
-            const createModal = () => {
-                return
-            }
-        </script>
+        <script src="script/main.js"></script>
     </body>
 </html>

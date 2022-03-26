@@ -38,6 +38,9 @@
     --fs-800: 2.5rem;
     --fs-900: 3rem;
     --fs-1000: 4rem;
+
+    /*** max-width ***/
+    --max: 1280px;
 }
 
 /* utility classes {{{ */
@@ -93,6 +96,12 @@
 .mblock7 {
     margin-block: 7%;
 }
+.mblock35 {
+    margin-block: 3.5%;
+}
+.minline35 {
+    margin-inline: 3.5%;
+}
 
 .pb0 {
     padding-bottom: 0;
@@ -126,8 +135,9 @@ html {
     position: relative;
 }
 body {
-    margin: 0;
+    margin: auto;
     line-height: 1.6rem;
+    max-width: var(--max);
 }
 h1,
 h2,
@@ -386,6 +396,7 @@ header.active #navigation ul li:nth-child(5) {
     }
 }
 
+/* FIX: make sure media queries for bottom nav cut off before it hits laptop size (check on aria laptop) */
 @media (min-width: 75em) {
     header {
         font-size: 1.25rem;
@@ -403,8 +414,8 @@ header.active #navigation ul li:nth-child(5) {
 }
 
 @media (min-width: 100em) {
-    body {
-        max-width: 80vw;
-        margin: auto;
-    }
+    /* body { */
+    /*     max-width: 80vw; */
+    /*     margin: auto; */
+    /* } */
 }

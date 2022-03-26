@@ -9,11 +9,11 @@ header {
     width: 100%;
     background-color: var(--bg1);
     background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%);
-    /* padding-inline: 7.5%; */
 }
 header .header-container {
     width: 100%;
-    background: transparent;
+    background-color: var(--bg1);
+    background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%);
 }
 
 main .details {
@@ -38,6 +38,11 @@ main ul li:hover {
 }
 
 /*** media queries ***/
+@media (max-width: var(--max)) {
+    main {
+        margin-inline: 3.5%;
+    }
+}
 @media (min-width: 62.5em) {
     header {
         padding-inline: 7.5%;
@@ -60,4 +65,3 @@ main ul li:hover {
         flex-basis: 55%;
     }
 }
-

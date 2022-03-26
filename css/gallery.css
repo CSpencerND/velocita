@@ -1,16 +1,28 @@
 #showcase {
     columns: 2;
-    margin: 3.5%;
+    margin-block: 0.33rem;
+}
+
+@supports (grid-template-rows: masonry) {
+    #showcase {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: masonry;
+        grid-auto-flow: dense;
+        /* align-tracks: stretch; */
+    }
 }
 
 #showcase img {
-    margin: 0.25rem;
+    margin-block: 0.33rem;
+    break-inside: avoid;
     cursor: pointer;
     transition: 0.5s;
 }
 
 #showcase img:hover {
-    transform: translateY(-4px);
+    transform: scale(1.025);
 }
 
 .modal {

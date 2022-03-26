@@ -67,15 +67,15 @@
             </nav>
         </header>
 
-        <main class="mb25">
-            <section id="header-banner">
-                <div class="img-container"></div>
-                <!-- <a id="scroll-arrow" href="#about"> -->
-                <!--     <i class="fa-solid fa-arrow-down"></i> -->
-                <!-- </a> -->
-            </section>
+        <section id="header-banner">
+            <div class="img-container"></div>
+            <!-- <a id="scroll-arrow" href="#about"> -->
+            <!--     <i class="fa-solid fa-arrow-down"></i> -->
+            <!-- </a> -->
+        </section>
 
-            <article id="about" class="container card">
+        <main class="mb25">
+            <article id="about" class="card">
                 <h1>Services</h1>
                 <hr />
                 <p>
@@ -89,7 +89,7 @@
                 </p>
             </article>
 
-            <section class="details container">
+            <section class="details">
                 <div id="ducati" class="makes card">
                     <h3>Ducati</h3>
                     <ul>
@@ -169,32 +169,6 @@
             </a>
         </nav>
 
-        <script>
-            const toggle = document.getElementById('toggle')
-            const header = document.getElementById('header')
-
-            toggle.onclick = () => {
-                toggle.classList.toggle('active')
-                header.classList.toggle('active')
-            }
-
-            const bottomNav = document.getElementById('bottom-navigation')
-            // const scrollArrow = document.getElementById('scroll-arrow')
-            let lastScrollY = window.scrollY
-            window.onscroll = () => {
-                if (lastScrollY < window.scrollY) {
-                    bottomNav.classList.add('nav-hidden')
-                    // scrollArrow.innerHTML =
-                    //     '<i class="fa-solid fa-arrow-up"></i>'
-                    // scrollArrow.href = '#'
-                } else {
-                    bottomNav.classList.remove('nav-hidden')
-                    // scrollArrow.innerHTML =
-                    //     '<i class="fa-solid fa-arrow-down"></i>'
-                    // scrollArrow.href = '#about'
-                }
-                lastScrollY = window.scrollY
-            }
-        </script>
+        <script src="script/main.js"></script>
     </body>
 </html>

@@ -65,12 +65,12 @@
             </nav>
         </header>
 
-        <main class="mblock7 container">
+        <main class="mblock35">
             <figure class="container">
                 <img src="assets/about/mountain.jpg" alt="" />
                 <figcaption>
-                    Riding across the Himalayan Mountains
-                    <span>photo by Noah Conopask</span>
+                    <span>Riding across the Himalayan Mountains</span>
+                    photo by Noah Conopask
                 </figcaption>
             </figure>
             <article class="card container">
@@ -146,25 +146,6 @@
             </a>
         </nav>
 
-        <script>
-            const toggle = document.getElementById('toggle')
-            const header = document.getElementById('header')
-
-            toggle.onclick = () => {
-                toggle.classList.toggle('active')
-                header.classList.toggle('active')
-            }
-
-            const bottomNav = document.getElementById('bottom-navigation')
-            let lastScrollY = window.scrollY
-            window.onscroll = () => {
-                if (lastScrollY < window.scrollY) {
-                    bottomNav.classList.add('nav-hidden')
-                } else {
-                    bottomNav.classList.remove('nav-hidden')
-                }
-                lastScrollY = window.scrollY
-            }
-        </script>
+        <script src="script/main.js"></script>
     </body>
 </html>

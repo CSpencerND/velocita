@@ -13,7 +13,12 @@ figcaption {
     text-transform: initial;
     font-size: var(--fs-200);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+figcaption span {
+    margin-right: 1.5rem;
 }
 
 article h3 {
@@ -36,6 +41,7 @@ span a {
         width: 100%;
         background: transparent;
     }
+
 }
 
 @media (min-width: 90em) {
