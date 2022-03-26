@@ -45,3 +45,17 @@
     width: 80%;
     max-width: 700px;
 }
+
+
+/*** media queries ***/
+@media (min-width: 62.5em) {
+    #showcase {
+        columns: 3;
+    }
+}
+
+@media (min-width: 90em) {
+    #showcase {
+        columns: 4;
+    }
+}
