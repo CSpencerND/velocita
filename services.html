@@ -32,8 +32,9 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/services.css" />
     </head>
+
     <body class="dark">
-        <header id="header">
+        <header id="header" class="relative">
             <div class="header-container">
                 <a id="logo" href="index.html">
                     <img
@@ -66,12 +67,14 @@
             </nav>
         </header>
 
-        <main>
-            <img
-                class="header-bg"
-                src="assets/branding/invert-skull-cropped.jpg"
-                alt=""
-            />
+        <main class="mb25">
+            <section id="header-banner">
+                <div class="img-container"></div>
+                <!-- <a id="scroll-arrow" href="#about"> -->
+                <!--     <i class="fa-solid fa-arrow-down"></i> -->
+                <!-- </a> -->
+            </section>
+
             <article id="about" class="container card">
                 <h1>Services</h1>
                 <hr />
@@ -87,7 +90,7 @@
             </article>
 
             <section class="details container">
-                <div class="makes card">
+                <div id="ducati" class="makes card">
                     <h3>Ducati</h3>
                     <ul>
                         <li>
@@ -124,7 +127,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="makes card">
+                <div id="triumph" class="makes card">
                     <h3>Triumph</h3>
                     <ul>
                         <li>
@@ -176,12 +179,19 @@
             }
 
             const bottomNav = document.getElementById('bottom-navigation')
+            // const scrollArrow = document.getElementById('scroll-arrow')
             let lastScrollY = window.scrollY
             window.onscroll = () => {
                 if (lastScrollY < window.scrollY) {
                     bottomNav.classList.add('nav-hidden')
+                    // scrollArrow.innerHTML =
+                    //     '<i class="fa-solid fa-arrow-up"></i>'
+                    // scrollArrow.href = '#'
                 } else {
                     bottomNav.classList.remove('nav-hidden')
+                    // scrollArrow.innerHTML =
+                    //     '<i class="fa-solid fa-arrow-down"></i>'
+                    // scrollArrow.href = '#about'
                 }
                 lastScrollY = window.scrollY
             }

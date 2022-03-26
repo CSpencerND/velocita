@@ -1,3 +1,10 @@
+#header-banner {
+    max-height: 100vh;
+    overflow: hidden;
+}
+video {
+    object-fit: cover;
+}
 .img-container {
     background-image: url('../assets/branding/skull.jpg');
 }
@@ -24,11 +31,4 @@
     .grid-container section:nth-child(1) {
         grid-row: span 2;
     }
-    .grid-container .img-container {
-        /* max-height: 100%; */
-    }
 }
-
-/* @media (min-width: 90em) { */
-
-/* } */

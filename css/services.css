@@ -1,3 +1,21 @@
+.img-container {
+    background-image: url('../assets/branding/invert-skull.jpg');
+    aspect-ratio: 24 / 9;
+    background-position-y: 25%;
+    opacity: 0.67;
+}
+
+header {
+    width: 100%;
+    background-color: var(--bg1);
+    background: linear-gradient(0deg, var(--bg2) 0%, var(--bg1) 50%);
+    /* padding-inline: 7.5%; */
+}
+header .header-container {
+    width: 100%;
+    background: transparent;
+}
+
 main .details {
     font-size: var(--fs-500);
 }
@@ -17,5 +35,29 @@ main ul li:hover {
 .fa-file-pdf {
     color: var(--pdf);
     padding-right: 0.5em;
-    /* opacity: 0.667; */
 }
+
+/*** media queries ***/
+@media (min-width: 62.5em) {
+    header {
+        padding-inline: 7.5%;
+    }
+
+    #about {
+        margin-bottom: 0;
+    }
+    .details {
+        display: flex;
+        gap: 1.5rem;
+    }
+    .details > * {
+        width: 100%;
+    }
+    #ducati {
+        flex-basis: 45%;
+    }
+    #triumph {
+        flex-basis: 55%;
+    }
+}
+

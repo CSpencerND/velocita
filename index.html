@@ -65,15 +65,22 @@
         </header>
 
         <main class="mb25">
-            <video
-                class="header-bg"
-                src="https://i.imgur.com/Zppdkp6.mp4"
-                poster="assets/frames/frame2.png"
-                autoplay
-                loop
-                muted
-            ></video>
-
+            <section id="header-banner">
+                <video
+                    class="header-bg"
+                    src="https://i.imgur.com/Zppdkp6.mp4"
+                    poster="assets/frames/frame2.png"
+                    autoplay
+                    loop
+                    muted
+                >
+                    This is supposed to be a video of the shop. Your browser is
+                    having trouble with it =(
+                </video>
+                <!-- <a id="scroll-arrow" href="#about"> -->
+                <!--     <i class="fa-solid fa-arrow-down"></i> -->
+                <!-- </a> -->
+            </section>
             <section class="container grid-container">
                 <section class="container card">
                     <article id="about">
@@ -141,12 +148,21 @@
             }
 
             const bottomNav = document.getElementById('bottom-navigation')
+            // const scrollArrow = document.getElementById('scroll-arrow')
             let lastScrollY = window.scrollY
             window.onscroll = () => {
                 if (lastScrollY < window.scrollY) {
                     bottomNav.classList.add('nav-hidden')
+                    // scrollArrow.innerHTML =
+                    //     '<i class="fa-solid fa-arrow-up"></i>'
+                    // scrollArrow.href = '#'
+                    // scrollArrow.style = 'display: none'
                 } else {
                     bottomNav.classList.remove('nav-hidden')
+                    // scrollArrow.innerHTML =
+                    //     '<i class="fa-solid fa-arrow-down"></i>'
+                    // scrollArrow.style = 'display: initial; opacity: .67'
+                    // scrollArrow.href = '#about'
                 }
                 lastScrollY = window.scrollY
             }
