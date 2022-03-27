@@ -25,6 +25,7 @@
     transform: scale(1.025);
 }
 
+/* TODO: add transitions */
 .modal {
     opacity: 0;
     pointer-events: none;
