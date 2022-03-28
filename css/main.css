@@ -412,10 +412,3 @@ header.active #navigation ul li:nth-child(5) {
         display: none;
     }
 }
-
-@media (min-width: 100em) {
-    /* body { */
-    /*     max-width: 80vw; */
-    /*     margin: auto; */
-    /* } */
-}

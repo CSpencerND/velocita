@@ -80,7 +80,7 @@
                         />
                     </p>
                     <p id="last-name">
-                        <!-- <label class="last" for="lastName">Name</label> -->
+                        <label class="last" for="lastName">Name</label>
                         <input
                             type="text"
                             name="lastName"
@@ -106,7 +106,7 @@
                             required
                         />
                     </p>
-                    <p class="full">
+                    <p id="details">
                         <label for="details" class="description">
                             Project Description
                             <span class="include">include year/make/model</span>
@@ -118,34 +118,39 @@
                             placeholder="what needs to be done?"
                         ></textarea>
                     </p>
-                    <p class="full">
+                    <p id="submit">
                         <button class="btn" type="submit">SUBMIT</button>
                     </p>
                 </form>
             </section>
 
-            <section class="container">
+            <section id="info-container" class="container">
                 <div id="info">
                     <address class="card">
                         Kerry Sano <br />
                         97 Union Street <br />
                         Brooklyn, NY <br />
+                        <br />
                         <a id="tel" href="tel:718-710-0545">718-710-0545</a>
                     </address>
                     <div id="hours" class="card">
                         <h3 class="mb0">SHOP HOURS</h3>
-                        <time datetime="10">Mon - Fri: 10am</time> -
-                        <time datetime="18">6pm</time> <br />
+                        <p>
+                            <time datetime="10">Mon - Fri: 10am</time> -
+                            <time datetime="18">6pm</time> <br />
+                        </p>
                         Sat & Sun: Closed
                     </div>
                 </div>
+            </section>
+            <div id="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12098.28449751291!2d-73.9236986!3d40.7054422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c06da2a9005%3A0xe7b68f519eb3fe76!2s93%20Forrest%20St%2C%20Brooklyn%2C%20NY%2011206!5e0!3m2!1sen!2sus!4v1647513108893!5m2!1sen!2sus"
                     style="border: 0"
                     allowfullscreen=""
                     loading="lazy"
                 ></iframe>
-            </section>
+            </div>
         </main>
 
         <nav id="bottom-navigation">
@@ -167,5 +172,6 @@
         </nav>
 
         <script src="script/main.js"></script>
+        <script src="script/contact.js"></script>
     </body>
 </html>

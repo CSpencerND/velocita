@@ -35,23 +35,22 @@
     height: 100vh;
     overflow: auto;
     background-color: rgb(33, 33, 33);
-    background-color: rgba(33, 33, 33, 0.5);
-    backdrop-filter: blur(7.5px);
+    background-color: rgba(33, 33, 33, 0.67);
+    backdrop-filter: blur(5px);
     transition: 0.5s;
 }
-modal::backdrop {
-    filter: blur(10px);
-}
+
 .modal-content {
     top: 50%;
     transform: translateY(-50%);
     margin: auto;
     display: block;
     height: auto;
-    max-height: 90vh;
+    max-height: 80vh;
     width: auto;
-    max-width: 90vw;
+    max-width: 80vw;
     box-shadow: 0 0 10px 5px black;
+    z-index: 10000;
 }
 
 #img-modal.modal--active {

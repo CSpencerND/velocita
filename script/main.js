@@ -25,5 +25,3 @@ window.onscroll = () => {
     }
     lastScrollY = window.scrollY
 }
-
-// TODO: use js to add src to modal.img.src; remove and make opacity 0 when clicked anywhere
