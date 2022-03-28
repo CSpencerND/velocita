@@ -20,7 +20,7 @@ modal.onclick = () => {
     body.classList.remove('modal--active')
 }
 
-document.onkeydown = (event) => {
+document.onkeyup = (event) => {
     if (event.key === 'Escape') {
         modal.classList.remove('modal--active')
         body.classList.remove('modal--active')
