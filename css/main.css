@@ -396,7 +396,6 @@ header.active #navigation ul li:nth-child(5) {
     }
 }
 
-/* FIX: make sure media queries for bottom nav cut off before it hits laptop size (check on aria laptop) */
 @media (min-width: 75em) {
     header {
         font-size: 1.25rem;
@@ -404,10 +403,12 @@ header.active #navigation ul li:nth-child(5) {
 }
 
 @media (min-width: 90em) {
-
     header {
         font-size: 1.5rem;
     }
+}
+
+@media (min-width: 1170px) {
     #bottom-navigation {
         display: none;
     }
