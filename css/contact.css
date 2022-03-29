@@ -53,6 +53,9 @@ form .btn {
 }
 /* FORM }}} */
 
+#info address {
+    font-style: normal;
+}
 #info address #tel {
     width: fit-content;
 }
