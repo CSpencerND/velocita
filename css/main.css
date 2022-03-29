@@ -410,6 +410,26 @@ header.active #navigation ul li:nth-child(5) {
 
 @media (min-width: 1170px) {
     #bottom-navigation {
+        all: unset;
+        margin: 3.5%;
+        font-size: 2em;
+        background-color: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+    }
+    #bottom-navigation a i {
+        transition: 0.5s;
+    }
+    #bottom-navigation a i:hover {
+        transform: translateY(-4px);
+    }
+    .nav-hidden {
+        transform: unset;
+    }
+
+    #bottom-navigation a:nth-child(2) {
         display: none;
     }
 }
